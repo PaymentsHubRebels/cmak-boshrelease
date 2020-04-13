@@ -1,0 +1,5 @@
+set -e
+
+unzip ${BOSH_COMPILE_TARGET}/cmak-3.0.0.4.zip
+
+cp -a ${BOSH_COMPILE_TARGET}/cmak-3.0.0.4/* ${BOSH_INSTALL_TARGET}/

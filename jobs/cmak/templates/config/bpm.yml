@@ -1,0 +1,13 @@
+---
+processes:
+- name: cmak
+  executable: /var/vcap/jobs/cmak/bin/ctl
+  args: [start]
+  ephemeral_disk: true
+  persistent_disk: false
+  env: {}
+  limits:
+    memory: 1G
+    open_files: 1024
+
+# example at https://github.com/cloudfoundry-incubator/bpm-release/blob/master/jobs/bpm-test-agent/templates/bpm.yml.erb

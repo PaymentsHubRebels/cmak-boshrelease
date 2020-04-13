@@ -1,0 +1,5 @@
+check process cmak
+  with pidfile /var/vcap/sys/run/bpm/cmak/cmak.pid
+  start program "/var/vcap/jobs/bpm/bin/bpm start cmak"
+  stop program "/var/vcap/jobs/bpm/bin/bpm stop cmak"
+  group vcap

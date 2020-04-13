@@ -1,0 +1,27 @@
+#!/bin/bash
+
+set -e
+
+source /var/vcap/packages/openjdk-11/bosh/runtime.env
+
+export PATH=$PATH:/var/vcap/packages/cmak/bin:$PATH
+export LOG_DIR=/var/vcap/sys/log/cmak
+
+case $1 in
+
+  start)
+    exec /var/vcap/packages/cmak/bin/cmak \
+      -Dconfig.file=/var/vcap/jobs/cmak/config/application.conf \
+      -Dhttp.port=<%= properties.listen_port %> \
+      -Dpidfile.path=/dev/null \
+      -Dlogger.file=/var/vcap/jobs/cmak/config/logback.xml \
+      -Djava.security.auth.login.config=/var/vcap/jobs/cmak/config/jaas.conf
+    ;;
+
+  *)
+    echo "Usage: $0 {start|status|cli}"
+    exit 1
+    ;;
+
+esac
+exit 0

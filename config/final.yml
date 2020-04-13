@@ -1,0 +1,5 @@
+name: cmak
+blobstore:
+  provider: local
+  options:
+    blobstore_path: /tmp/cmak-blobs
