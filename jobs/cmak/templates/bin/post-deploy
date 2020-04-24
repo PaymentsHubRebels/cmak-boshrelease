@@ -2,7 +2,7 @@
 
 set -ex
 
-sleep 10
+sleep 60
 
 <% zks = link('zookeeper') %>
 <% zk_port = zks.p('client_port') %>
