@@ -22,8 +22,10 @@ templates:
 consumes:
 - name: zookeeper
   type: zookeeper
+  optional: true
 - name: kafka
   type: conn
+  optional: true
   properties:
   - tls.ca_certs
   - tls.certificate
