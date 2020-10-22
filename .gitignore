@@ -7,8 +7,6 @@ blobs
 .vagrant
 .idea
 .DS_Store
-.final_builds/jobs/**/*.tgz
-.final_builds/packages/**/*.tgz
 releases/*.tgz
 releases/**/*.tgz
 .dev_builds
@@ -26,5 +24,3 @@ creds.yml
 .downloads
 .pairs
 *.tgz
-.dev_builds/
-.final_builds/
