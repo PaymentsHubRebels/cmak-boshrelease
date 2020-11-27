@@ -1,0 +1,23 @@
+name: cmak
+version: 1.0.10
+commit_hash: b18e630
+uncommitted_changes: false
+jobs:
+- name: cmak
+  version: 91154fecd5c890929218ddc29b02ae8109a0c8c2b903113f5d90b3413575ee23
+  fingerprint: 91154fecd5c890929218ddc29b02ae8109a0c8c2b903113f5d90b3413575ee23
+  sha1: sha256:4e986b812909edadcc5961f91ac01405a24a23239a4e4fd96775aa84c5bbb825
+  packages:
+  - openjdk-11
+  - cmak
+packages:
+- name: cmak
+  version: bde61a6b75a8ffb980b53ecdb99e11415227666604d7f0bd7f3e1ca747b8cdbb
+  fingerprint: bde61a6b75a8ffb980b53ecdb99e11415227666604d7f0bd7f3e1ca747b8cdbb
+  sha1: sha256:626094cb994c036d5c6015b8d74fd115a0242f26a2b54b4a076c17f2792bf806
+  dependencies: []
+- name: openjdk-11
+  version: 1b2aca50b3a14a3fdf4e92b9b9dcee3359995915f0cedc2d1be78c54b6ac82dc
+  fingerprint: 1b2aca50b3a14a3fdf4e92b9b9dcee3359995915f0cedc2d1be78c54b6ac82dc
+  sha1: sha256:9734ac4ab5b8951df5f01fa3b9492d65e781dbf9f32c703b611202f526c40029
+  dependencies: []
